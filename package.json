@@ -20,6 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test-all": "react-scripts test --watchAll",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
@@ -54,11 +55,21 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-console": "^1.2.3",
     "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-knobs": "^6.2.9",
     "@storybook/addon-links": "^6.2.9",
+    "@storybook/addon-storysource": "^6.2.9",
+    "@storybook/addon-viewport": "^6.2.9",
     "@storybook/cli": "^6.2.9",
     "@storybook/node-logger": "^6.2.9",
     "@storybook/preset-create-react-app": "^3.1.7",
-    "@storybook/react": "^6.2.9"
+    "@storybook/react": "^6.2.9",
+    "@types/storybook__addon-actions": "^5.2.1",
+    "@types/storybook__addon-info": "^5.2.3",
+    "@types/storybook__addon-knobs": "^5.2.1",
+    "@types/storybook__react": "^5.2.1",
+    "react-docgen-typescript-loader": "^3.7.2"
   }
 }
