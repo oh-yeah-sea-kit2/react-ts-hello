@@ -4,6 +4,11 @@ import Task from './Task';
 export default {
   component: Task,
   title: 'Task',
+  parameters: {
+    screenshot: {
+      delay: 200,
+    },
+  },
 };
 
 const Template = args => <Task {...args} />;
@@ -15,6 +20,14 @@ Default.args = {
     title: 'Test Task',
     state: 'TASK_INBOX',
     updatedAt: new Date(2018, 0, 1, 9, 0),
+  },
+};
+
+Default.story = {
+  parameters: {
+    screenshot: {
+      viewport: 'iPhone 5',
+    },
   },
 };
 
